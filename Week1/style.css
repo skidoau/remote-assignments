@@ -8,21 +8,19 @@ nav{
   display: flex;
   padding: 15px 10px;
   background-color: grey;  
+  justify-content: space-between;
 }
-nav div{
+nav .title{
   display: flex;
-  justify-content: flex-start;
 }
 nav ul{
   display: flex;
-  margin-left: auto;
 }
 
 .icon{
   display: none;
 }
 li{
-  display: inline-block;
   list-style: none;
   padding-left: 35px;
 }
@@ -50,35 +48,36 @@ main{
     flex-wrap: wrap;
     
 }
-section{
+.content{
   display: flex;
-    width: 100%;
-  
-}
-section div{
-  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  flex:1;
-  flex-basis: 50%;
-  background-color: grey;
-  margin: 10px;
+  border: 1px solid red;
 }
+
+.content .box{
+ width: 48%;
+ min-height: 1rem;
+ background-color: grey;
+ text-align: center;
+ border:10px solid white;
+}
+
+
 footer{
   display: flex;
   justify-content: center;
   padding: 60px 0px;
 }
-footer div{
+footer action{
   background-color: rgb(177, 177, 255);
   padding: 5px 10px;
 }
-@media only screen and (min-width: 800px) and (max-width: 1200px) {
-  main {
-    width: 100%;
-  }
-}
+
 @media only screen and (min-width: 500px) and (max-width: 800px) {
+
+    }
  ul,li{
   display: none;
  }
@@ -86,16 +85,16 @@ footer div{
       display: block;
       font-size: 24px;
     }
-}
-@media only screen and (max-width: 500px)  {
 
-    ul,
-    li {
-      display: none;
-    }
-    .icon {
-      display: block;
-      font-size: 24px;
-    }
- 
+@media only screen and (max-width: 500px)  {
+   .content .box{
+    width: 100%;
+  }
+   ul,li {
+  display: none;
+}
+  .icon {
+  display: block;
+  font-size: 24px;
+}
 }
