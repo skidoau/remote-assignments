@@ -48,14 +48,14 @@ main{
     flex-wrap: wrap;
     
 }
-.content{
+.content,.content2{
   display: flex;
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.content .box{
+.content .box,.content2 .box{
  width: 48%;
  min-height: 1rem;
  background-color: grey;
@@ -96,4 +96,8 @@ footer action{
   display: block;
   font-size: 24px;
 }
+}
+
+.content2 {
+  display: none;
 }
